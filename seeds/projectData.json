@@ -1,212 +1,219 @@
 [
     {
         "title": "Tales of Arise",
-        "genre": "rpg",
-        "studio": "",
+        "genre": "RPG",
+        "studio": "Bandai Namco",
         "release_date": "September 9, 2021",
-        "review_link": ""
+        "review_link": "https://www.metacritic.com/game/playstation-5/tales-of-arise"
     },
     {
         "title": "Final Fantasy VII",
-        "genre": "rpg",
-        "studio": "",
+        "genre": "RPG",
+        "studio": "Square Enix",
         "release_date": "April 10, 2020",
-        "review_link": ""
+        "review_link": "https://www.metacritic.com/game/playstation-4/final-fantasy-vii-remake"
     },
     {
         "title": "Cyberpunk 2077",
-        "genre": "rpg",
-        "studio": "",
+        "genre": "RPG",
+        "studio": "CD Projekt Red",
         "release_date": "December 10, 2020",
-        "review_link": ""
+        "review_link": "https://www.metacritic.com/game/playstation-4/final-fantasy-vii-remake"
     },
     {
-        "title": "Kingdom Hearts",
-        "genre": "rpg",
-        "studio": "",
-        "release_date": "",
-        "review_link": ""
+        "title": "Kingdom Hearts 3",
+        "genre": "RPG",
+        "studio": "Square Enix",
+        "release_date": "January 25, 2019",
+        "review_link": "https://www.ign.com/articles/2019/01/24/kingdom-hearts-3-review-ps4-xbox-one"
     },
     {
-        "title": "",
-        "genre": "rpg",
-        "studio": "",
-        "release_date": "",
-        "review_link": ""
+        "title": "Elden Ring",
+        "genre": "RPG",
+        "studio": "FromSoftware",
+        "release_date": "February 25, 2022",
+        "review_link": "https://www.metacritic.com/game/playstation-5/elden-ring"
     },
     {
-        "title": "",
-        "genre": "rpg",
-        "studio": "",
-        "release_date": "",
-        "review_link": ""
+        "title": "The Witcher 3",
+        "genre": "RPG",
+        "studio": "CD Projekt Red",
+        "release_date": "May 18, 2015",
+        "review_link": "https://www.metacritic.com/game/playstation-4/the-witcher-3-wild-hunt"
     },
     {
-        "title": "",
-        "genre": "rpg",
-        "studio": "",
-        "release_date": "",
-        "review_link": ""
+        "title": "Monster Hunter Rise",
+        "genre": "RPG",
+        "studio": "Capcom",
+        "release_date": "March 26, 2021",
+        "review_link": "https://www.metacritic.com/game/switch/monster-hunter-rise"
     },
     {
-        "title": "",
-        "genre": "rpg",
-        "studio": "",
-        "release_date": "",
-        "review_link": ""
+        "title": "Destiny 2",
+        "genre": "RPG",
+        "studio": "Bungie",
+        "release_date": "September 6, 2017",
+        "review_link": "https://www.metacritic.com/game/playstation-4/destiny-2"
     },
     {
-        "title": "",
-        "genre": "rpg",
-        "studio": "",
-        "release_date": "",
-        "review_link": ""
+        "title": "God of War: Ragnarok",
+        "genre": "RPG",
+        "studio": "Santa Monica Studios",
+        "release_date": "November 9, 2022",
+        "review_link": "https://www.metacritic.com/game/playstation-5/god-of-war-ragnarok"
     },
     {
-        "title": "",
-        "genre": "rpg",
-        "studio": "",
-        "release_date": "",
-        "review_link": ""
+        "title": "Pokemon: Scarlet",
+        "genre": "RPG",
+        "studio": "Game Freak",
+        "release_date": "November 18, 2022",
+        "review_link": "https://www.metacritic.com/game/switch/pokemon-scarlet"
     },
     {
-        "title": "",
-        "genre": "",
-        "studio": "",
-        "release_date": "",
-        "review_link": ""
+        "title": "Star Wars: Fallen Order",
+        "genre": "RPG",
+        "studio": "Respawn Entertainment",
+        "release_date": "November 15, 2019",
+        "review_link": "https://www.metacritic.com/game/playstation-4/star-wars-jedi-fallen-order"
     },
     {
-        "title": "",
-        "genre": "",
-        "studio": "",
-        "release_date": "",
-        "review_link": ""
+        "title": "Bendy and the Dark Revival",
+        "genre": "Horror",
+        "studio": "Joey Drew Studios",
+        "release_date": "November 15, 2022",
+        "review_link": "https://www.metacritic.com/game/pc/bendy-and-the-dark-revival"
     },
     {
-        "title": "",
-        "genre": "",
-        "studio": "",
-        "release_date": "",
-        "review_link": ""
+        "title": "Resident Evil 2 (Remake)",
+        "genre": "Horror",
+        "studio": "Capcom",
+        "release_date": "January 24, 2019",
+        "review_link": "https://www.metacritic.com/game/playstation-4/resident-evil-2/trailers/12454001"
     },
     {
-        "title": "",
-        "genre": "",
-        "studio": "",
-        "release_date": "",
-        "review_link": ""
+        "title": "Dead Space",
+        "genre": "Horror",
+        "studio": "EA Redwood Shores",
+        "release_date": "October 14, 2008",
+        "review_link": "https://www.metacritic.com/game/pc/dead-space-2008"
     },
     {
-        "title": "",
-        "genre": "",
-        "studio": "",
-        "release_date": "",
-        "review_link": ""
+        "title": "Outlast",
+        "genre": "Horror",
+        "studio": "Red Barrels",
+        "release_date": "September 4, 2013",
+        "review_link": "https://www.metacritic.com/game/pc/outlast"
     },
     {
-        "title": "",
-        "genre": "",
-        "studio": "",
-        "release_date": "",
-        "review_link": ""
+        "title": "The Evil Within",
+        "genre": "Horror",
+        "studio": "Tango Gameworks",
+        "release_date": "October 13, 2014",
+        "review_link": "https://www.metacritic.com/game/playstation-4/the-evil-within"
     },
     {
-        "title": "",
-        "genre": "",
-        "studio": "",
-        "release_date": "",
-        "review_link": ""
+        "title": "Alien Isolation",
+        "genre": "Horror",
+        "studio": "Creative Assembly",
+        "release_date": "October 6, 2014",
+        "review_link": "https://www.metacritic.com/game/playstation-4/alien-isolation"
     },
     {
-        "title": "",
-        "genre": "",
-        "studio": "",
-        "release_date": "",
-        "review_link": ""
+        "title": "Little Nightmares",
+        "genre": "Horror",
+        "studio": "Tarsier Studios",
+        "release_date": "August 17, 2017",
+        "review_link": "https://www.metacritic.com/game/playstation-4/little-nightmares"
     },
     {
-        "title": "",
-        "genre": "",
-        "studio": "",
-        "release_date": "",
-        "review_link": ""
+        "title": "Phasmophobia",
+        "genre": "Horror",
+        "studio": "Kinetic Games",
+        "release_date": "September 18, 2020",
+        "review_link": "https://store.steampowered.com/app/739630/Phasmophobia/"
     },
     {
-        "title": "",
-        "genre": "",
-        "studio": "",
-        "release_date": "",
-        "review_link": ""
+        "title": "Soma",
+        "genre": "Horror",
+        "studio": "Frictional Games",
+        "release_date": "September 21, 2015",
+        "review_link": "https://www.gamespot.com/reviews/soma-review/1900-6416245/"
     },
     {
-        "title": "",
-        "genre": "",
-        "studio": "",
-        "release_date": "",
-        "review_link": ""
+        "title": "Dead by Daylight",
+        "genre": "Horror",
+        "studio": "Behaviour Interactive",
+        "release_date": "June 14, 2016",
+        "review_link": "https://www.ign.com/articles/dead-by-daylight-review"
     },
     {
-        "title": "",
-        "genre": "",
-        "studio": "",
-        "release_date": "",
-        "review_link": ""
+        "title": "Enter the Gungeon",
+        "genre": "Rogue-Like",
+        "studio": "Dodge Roll",
+        "release_date": "April 5, 2016",
+        "review_link": "https://www.ign.com/articles/2016/04/05/enter-the-gungeon-review"
     },
     {
-        "title": "",
-        "genre": "",
-        "studio": "",
-        "release_date": "",
-        "review_link": ""
+        "title": "Streets of Rogue",
+        "genre": "Rogue-Like",
+        "studio": "tinyBuild",
+        "release_date": "March 10, 2017",
+        "review_link": "https://www.pcgamer.com/streets-of-rogue-review/"
     },
     {
-        "title": "",
-        "genre": "",
-        "studio": "",
-        "release_date": "",
-        "review_link": ""
+        "title": "Slay the Spire",
+        "genre": "Rogue-Like",
+        "studio": "MegaCrit",
+        "release_date": "November 14, 2017",
+        "review_link": "https://www.pcgamer.com/slay-the-spire-review/https://www.pcgamer.com/slay-the-spire-review/"
     },
     {
-        "title": "",
-        "genre": "",
-        "studio": "",
-        "release_date": "",
-        "review_link": ""
+        "title": "Spelunky 2",
+        "genre": "Rogue-Like",
+        "studio": "Mossmouth",
+        "release_date": "September 15, 2020",
+        "review_link": "https://www.nintendolife.com/reviews/switch-eshop/spelunky_2"
     },
     {
-        "title": "",
-        "genre": "",
-        "studio": "",
-        "release_date": "",
-        "review_link": ""
+        "title": "Noita",
+        "genre": "Rogue-Like",
+        "studio": "Nolla Games",
+        "release_date": "September 24, 2019",
+        "review_link": "https://www.pcgamer.com/noita-review/"
     },
     {
-        "title": "",
-        "genre": "",
-        "studio": "",
-        "release_date": "",
-        "review_link": ""
+        "title": "The Binding of Isaac",
+        "genre": "Rogue-Like",
+        "studio": "Edmund McMillen",
+        "release_date": "September 28, 2011",
+        "review_link": "https://store.steampowered.com/agecheck/app/250900/"
     },
     {
-        "title": "",
-        "genre": "",
-        "studio": "",
-        "release_date": "",
-        "review_link": ""
+        "title": "Dead Cells",
+        "genre": "Rogue-Like",
+        "studio": "Motion Twin",
+        "release_date": "May 10, 2017",
+        "review_link": "https://store.steampowered.com/app/588650/Dead_Cells/"
     },
     {
-        "title": "",
-        "genre": "",
-        "studio": "",
-        "release_date": "",
-        "review_link": ""
+        "title": "Inscryption",
+        "genre": "Rogue-Like",
+        "studio": "Daniel Mullins Games",
+        "release_date": "October 19, 2021",
+        "review_link": "https://www.ign.com/articles/inscryption-review"
     },
     {
-        "title": "",
-        "genre": "",
-        "studio": "",
-        "release_date": "",
-        "review_link": ""
+        "title": "Risk of Rain 2",
+        "genre": "Rogue-Like",
+        "studio": "Hopoo Games",
+        "release_date": "March 28, 2019",
+        "review_link": "https://store.steampowered.com/app/632360/Risk_of_Rain_2/"
+    },
+    {
+        "title": "Hades",
+        "genre": "Rogue-Like",
+        "studio": "Supergiant Games",
+        "release_date": "December 6, 2018",
+        "review_link": "https://www.ign.com/articles/hades-review"
     }
 ]
