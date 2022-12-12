@@ -1,39 +1,25 @@
-const User = require('./User');
-const Games = require('./Games');
-// const Genre = require('./Genre');
-const sequelize = require('../config/connection');
-const { Model, DataTypes } = require('sequelize');
+const User = require("./User")
+const Games = require("./Games")
+const Genre = require("./Genre")
 
+// User
 User.hasMany(Games, {
-  foreignKey: 'user_id',
-  onDelete: 'CASCADE'
-});
+    foreignKey: "user_id",
+    onDelete: "CASCADE"
+})
 
+// Games
 Games.belongsTo(User, {
   foreignKey: 'user_id'
 });
 
+Games.belongsTo(Genre, {
+    foreignKey: "genre_id"
+})
 
+// Genre
+Genre.hasMany(Games, {
+    foreignKey: "game_id"
+})
 
-// const GameGenres = sequelize.define('GameGenres', {
-//   GameId: {
-//     type: DataTypes.INTEGER,
-//     references: {
-//       model: Games,
-//       key: 'id'
-//     }
-//   },
-//   GenreId: {
-//     type: DataTypes.INTEGER,
-//     references: {
-//       model: Genre,
-//       key: 'id'
-//     }
-//   }
-// });
-// Games.belongsToMany(Genre, { through: GameGenres });
-// Genre.belongsToMany(Games, { through: GameGenres });
-
-// module.exports = { User, Games, Genre };
-
-module.exports = { User, Games };
+module.exports = {User, Games, Genre}
