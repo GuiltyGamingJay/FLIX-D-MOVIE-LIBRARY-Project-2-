@@ -18,10 +18,12 @@ Games.init(
     genre: {
       type: DataTypes.STRING,
       allowNull: false,
-      references: {
-        model: "genre",
-        key: "name"
-      }
+
+      // THIS IS IT
+      // references: {
+      //   model: "genre",
+      //   key: "name"
+      // }
     },
     studio: {
       type: DataTypes.STRING,
