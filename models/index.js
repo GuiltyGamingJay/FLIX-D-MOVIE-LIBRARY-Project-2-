@@ -1,6 +1,6 @@
 const User = require("./User")
 const Games = require("./Games")
-const Genre = require("./Genre")
+// const Genre = require("./Genre")
 
 // User
 User.hasMany(Games, {
@@ -13,13 +13,13 @@ Games.belongsTo(User, {
   foreignKey: 'user_id'
 });
 
-Games.belongsTo(Genre, {
-    foreignKey: "genre_id"
-})
+// Games.belongsTo(Genre, {
+//     foreignKey: "genre_id"
+// })
 
 // Genre
-Genre.hasMany(Games, {
-    foreignKey: "game_id"
-})
+// Genre.hasMany(Games, {
+//     foreignKey: "game_id"
+// })
 
-module.exports = {User, Games, Genre}
+module.exports = { User, Games }
