@@ -2,6 +2,8 @@ const router = require('express').Router();
 const { Games, User } = require('../models');
 const withAuth = require('../utils/auth');
 
+
+// change this get route to login.handlebars
 router.get('/', async (req, res) => {
   try {
     // Get all projects and JOIN with user data
@@ -18,6 +20,9 @@ router.get('/', async (req, res) => {
     const games = gamesData.map((project) => project.get({ plain: true }));
 
     // Pass serialized data and session flag into template
+
+
+    // CHANGE HERE
     res.render('homepage', { 
       games, 
       logged_in: req.session.logged_in 
@@ -60,6 +65,7 @@ router.get('/profile', withAuth, async (req, res) => {
 
     const user = userData.get({ plain: true });
 
+    // should this be res.redirect???
     res.render('profile', {
       ...user,
       logged_in: true
@@ -69,6 +75,10 @@ router.get('/profile', withAuth, async (req, res) => {
   }
 });
 
+
+
+// change this route to / so it'll be the login landing page
+// or change the redirect???
 router.get('/login', (req, res) => {
   // If the user is already logged in, redirect the request to another route
   if (req.session.logged_in) {
