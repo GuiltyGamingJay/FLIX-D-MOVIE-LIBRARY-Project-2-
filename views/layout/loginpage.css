@@ -1,0 +1,86 @@
+
+
+body {
+  background: #040405;
+  background-position: center;
+  background-size: cover;
+  height: 100px;
+}
+
+.form {
+  width: 250px;
+  height: 340px;
+  color: #ffff;
+  background-color: #581217;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  padding: 40px 25px;
+}
+
+.form h1 {
+  width: 220px;
+  text-align: center;
+  padding-right: 10px;
+  margin-bottom: 20px;
+  font-size: 35px;
+}
+
+.form input {
+  width: 100%;
+  height: 35px;
+  padding-top: 10px;
+  margin-bottom: 15px;
+  background: transparent;
+  border-bottom: 1px solid #fff;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  color: #ffff;
+  font-size: 15px;
+  letter-spacing: 1px;
+  outline: none;
+}
+
+.form input:focus {
+  outline: none;
+}
+
+::placeholder {
+  color: #fff;
+  font-family: arial;
+}
+
+.bttn {
+  font-size: 18px;
+  padding: 10px 15px;
+  background: transparent;
+  border: none;
+  margin-top: 10px;
+  margin-left: 50px;
+  cursor: pointer;
+}
+
+.btnn a {
+  text-decoration: none;
+  color: #ffff;
+  font-weight: bold;
+}
+
+.bttn a:hover {
+  color: #581217;
+}
+
+.form .link {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  padding-top: 10px;
+  text-align: center;
+}
+
+.form .link a {
+  text-decoration: none;
+  color: #fff;
+}
