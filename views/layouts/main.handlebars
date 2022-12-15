@@ -15,11 +15,11 @@
       Gamers Log
     </h1>
     <!-- Only display the logout button if the user is logged in -->
-    {{#if logged_in}}
-    <nav>
+    {{!-- {{#if loggedIn}} --}}
+    {{!-- <nav>
       <button class="btn" id="logout">logout</button>
-    </nav>
-    {{/if}}
+    </nav> --}}
+    {{!-- {{/if}} --}}
   </header>
   <main class="container container-fluid mt-5">
     {{{ body }}}
@@ -31,9 +31,10 @@
   </footer>
 
   <!-- Only include the logout script if the user is logged in -->
-  {{#if logged_in}}
-  <script src="/public/js/logout.js"></script>
-  {{/if}}
+  {{!-- {{#if loggedIn}} --}}
+  <script src="/js/logout.js"></script>
+  <script src="/controllers/api/user-routes.js"></script>
+  {{!-- {{/if}} --}}
 </body>
 
 </html>
