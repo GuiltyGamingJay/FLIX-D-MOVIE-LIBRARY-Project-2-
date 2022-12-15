@@ -21,9 +21,19 @@
                 <li>
                     <a href="#">Search</a>
                 </li>
+                {{#if loggedIn}}
+                <li>
+                <a href="/homepage" class="btn" id="logout">logout</a>
+                </li>
+
+                {{else}}
                 <li>
                     <a href="/login">Login</a>
                 </li>
+                {{/if}}
+                {{!-- <li>
+                <a href="/homepage" class="btn" id="logout">   logout</a>
+                </li> --}}
                 
             </ul>
         </nav>
