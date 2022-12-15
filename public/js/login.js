@@ -15,9 +15,12 @@ const loginFormHandler = async (event) => {
 
     if (response.ok) {
       // If successful, redirect the browser to the profile page
-      document.location.replace('/');
+      document.location.replace('/profile');
+      console.log("You are now logged in!");
+
     } else {
       alert(response.statusText);
+      console.log("ERROR. DID NOT LOG IN");
     }
   }
 };

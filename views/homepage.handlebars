@@ -21,16 +21,33 @@
                 <li>
                     <a href="#">Search</a>
                 </li>
+
+
+
+{{!-- LOOK FOR REPLACE / UPON POST IN ANOTHER CODE BLOCK IN JS FILE --}}
+{{!-- LOGIN NOT POSTING??????? HOW TO TEST --}}
+
+                {{!-- {{#if loggedIn}} --}}
                 {{#if loggedIn}}
                 <li>
                 <a href="/homepage" class="btn" id="logout">logout</a>
                 </li>
+                {{/if}}
 
-                {{else}}
+                {{#unless loggedIn}}
                 <li>
                     <a href="/login">Login</a>
+
+                    {{!-- this works --}}
+                    {{!-- <a href="/TESTTESTTEST">TESTING LOOK HERE TEST TEST TEST</a> --}}
+
                 </li>
-                {{/if}}
+                {{/unless}}
+
+
+
+
+
                 {{!-- <li>
                 <a href="/homepage" class="btn" id="logout">   logout</a>
                 </li> --}}
@@ -114,11 +131,10 @@ Further details, like release window and platform availability, were not immedia
 
 <footer class="footer">
 	<div class="footer_text-box"> 
-		<p id="footer_text">© Je'rontai mcfee, </p>
+		<p id="footer_text">© Je'rontai Mcfee, Andrew Connally, </p>
 	</div>
 
 </footer>
-</body>
 
 
 
