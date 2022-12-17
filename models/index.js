@@ -1,25 +1,60 @@
-const User = require("./User")
-const Games = require("./Games")
-// const Genre = require("./Genre")
+// import models
+const Product = require('./Product');
+const Cart = require('./cart');
+const Users = require('./users');
+const Category = require('./category');
+const User = require('./users');
 
-// User
-User.hasMany(Games, {
-    foreignKey: "user_id",
-    onDelete: "CASCADE"
+// Cart.hasMany(Users, {
+//   foreignKey: "user_id",
+//   onDelete: "CASCADE"
+
+// })
+// Users.belongsTo(Cart, {
+//   foreignKey: "user_id",
+//   onDelete: "CASCADE"  
+
+// }), 
+
+
+// Products belongsTo Category
+Product.hasOne(Category, {
+  foreignKey: "category_id",
+  onDelete: "CASCADE"
+
 })
 
-// Games
-Games.belongsTo(User, {
-  foreignKey: 'user_id'
-});
 
-// Games.belongsTo(Genre, {
-//     foreignKey: "genre_id"
+Product.hasOne(Cart)
+
+Cart.belongsTo(Product)
+
+// User.belongsToMany(Product, {
+//   through: Cart
 // })
 
-// Genre
-// Genre.hasMany(Games, {
-//     foreignKey: "game_id"
+// Product.belongsToMany(User, {
+//   through: Cart
 // })
 
-module.exports = { User, Games }
+// Categories have many Products
+
+Category.hasMany(Product, {
+  foreignKey: "category_id",
+  onDelete: "CASCADE"
+
+})
+
+// Cart.hasOne(Product)
+
+// Product.belongsTo(Cart)
+// Products belongToMany Tags (through ProductTag)
+// Tags belongToMany Products (through ProductTag)
+module.exports = {
+  Product,
+  Users,
+  Cart,
+  Category
+  
+  
+};

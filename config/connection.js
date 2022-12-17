@@ -7,12 +7,6 @@ if (process.env.JAWSDB_URL) {
   sequelize = new Sequelize(process.env.JAWSDB_URL);
 } else {
   sequelize = new Sequelize(
-<<<<<<< HEAD
-    // 'gaming_db',
-    // 'root',
-    // 'root',
-=======
->>>>>>> parent of 7fb0cb7 (fixed login button route)
     process.env.DB_NAME,
     process.env.DB_USER,
     process.env.DB_PASSWORD,

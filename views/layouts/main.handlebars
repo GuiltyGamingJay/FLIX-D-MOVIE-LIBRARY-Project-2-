@@ -6,33 +6,67 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gamer's Log</title>
   <link rel="stylesheet" href="/css/style.css">
-  {{!-- <link rel="stylesheet" href="/css/login.css"> --}}
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"> 
 </head>
 
 <body>
   <header class="display-flex justify-space-between align-center p-2">
-    <h1>
-      Gamers Log
-    </h1>
-    <!-- Only display the logout button if the user is logged in -->
-    {{#if loggedIn}}
-    <nav>
-      <button class="btn" id="logout">logout</button>
-    </nav>
-    {{/if}}
+   </head>
+<section class="primary"><em></em>
+    <header class="header">
+     <div id="nav-bar">
+            <a href="/">
+              <div id="box">
+                <div id="Homepage" class="homepage-btn">
+                    Homepage
+                </div>
+              </div>
+            </a>
+            <a href="/"><i class="fa-solid fa-house"></i></a>
+            {{#if logged_in}}      
+            {{/if}}
+            {{#if logged_in}}
+            <a class="loginout" href="/api/users/logout">Logout</a>
+            {{else}}
+            <a class="loginout" href="/login">Login</a>
+            {{/if}}<br>
+            <a class="dashboard"href="/dashboard">Backlog</a>
+            
+        </div>
+        </nav>
+    </header>
+</section>
   </header>
   <main class="container container-fluid mt-5">
     {{{ body }}}
   </main>
   <footer>
       <div class="footer_text-box"> 
-		<p id="footer_text">© Je'rontai mcfee, </p>
-	</div>
+		<p id="footer_text">© Je'rontai mcfee    Andrew Connally </p>
+	
   </footer>
-
+  </div>
   <!-- Only include the logout script if the user is logged in -->
 
 </body>
 
 </html>
+{{#if logged_in}}
+
+ 
+  {{/if}}
+
+ <script>
+
+   async function AddtoCart(product_id){
+            console.log(product_id)
+            let response = await fetch("http://localhost:3001/api/products/addtocart/"+product_id, {
+                method: "GET",
+                headers: {
+                    "Content-Type" : "application/json"
+                }
+            })
+            let data = await response.json()
+            alert(data.message)
+   }
+ </script>

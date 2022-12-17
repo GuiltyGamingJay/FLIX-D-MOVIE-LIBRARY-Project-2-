@@ -1,0 +1,176 @@
+
+
+<div class="example-parent">
+  <h1></h1>
+  <div class="example-origin">
+    Games list
+    <div
+      id="draggable-1"
+      class="example-draggable"
+      draggable="true"
+      ondragstart="onDragStart(event);"
+    >
+      Tales of Arise
+    </div>
+    <div
+      id="draggable-2"
+      class="example-draggable"
+      draggable="true"
+      ondragstart="onDragStart(event);"
+    >
+      Final Fantasy VII
+    </div>
+    <div
+      id="draggable-3"
+      class="example-draggable"
+      draggable="true"
+      ondragstart="onDragStart(event);"
+    >
+      Cyberpunk 2077
+    </div>
+    <div
+      id="draggable-4"
+      class="example-draggable"
+      draggable="true"
+      ondragstart="onDragStart(event);"
+    >
+      God of War:Ragnarok
+    </div>
+     <div
+      id="draggable-5"
+      class="example-draggable"
+      draggable="true"
+      ondragstart="onDragStart(event);"
+    >
+      HADES
+    </div>
+     <div
+      id="draggable-6"
+      class="example-draggable"
+      draggable="true"
+      ondragstart="onDragStart(event);"
+    >
+      Risk of Rain 2
+    </div>
+     <div
+      id="draggable-7"
+      class="example-draggable"
+      draggable="true"
+      ondragstart="onDragStart(event);"
+    >
+      Dead Cells
+    </div>
+     <div
+      id="draggable-8"
+      class="example-draggable"
+      draggable="true"
+      ondragstart="onDragStart(event);"
+    >
+      Slay the Spire
+    </div>
+     <div
+      id="draggable-9"
+      class="example-draggable"
+      draggable="true"
+      ondragstart="onDragStart(event);"
+    >
+      Streets of Rogue
+    </div>
+     <div
+      id="draggable-10"
+      class="example-draggable"
+      draggable="true"
+      ondragstart="onDragStart(event);"
+    >
+      Enter the Gungeon
+    </div>
+     <div
+      id="draggable-11"
+      class="example-draggable"
+      draggable="true"
+      ondragstart="onDragStart(event);"
+    >
+      Dead by Daylight
+    </div>
+     <div
+      id="draggable-12"
+      class="example-draggable"
+      draggable="true"
+      ondragstart="onDragStart(event);"
+    >
+      Elden Ring
+    </div>
+     <div
+      id="draggable-13"
+      class="example-draggable"
+      draggable="true"
+      ondragstart="onDragStart(event);"
+    >
+      Pokemon: Scarlet
+    </div>
+     <div
+      id="draggable-14"
+      class="example-draggable"
+      draggable="true"
+      ondragstart="onDragStart(event);"
+    >
+      Destiny 2
+    </div>
+     <div
+      id="draggable-15"
+      class="example-draggable"
+      draggable="true"
+      ondragstart="onDragStart(event);"
+    >
+     Monster Hunter Rise
+    </div>
+
+  </div>
+  
+
+
+  <div 
+    class="example-dropzone"
+    ondragover="onDragOver(event);"
+    ondrop="onDrop(event);"
+  >
+    Backlog 
+  </div>
+</div>
+
+
+
+
+
+{{!--  i followed the tuturial , this is a fix that will be done over the weekend because of complications
+https://www.digitalocean.com/community/tutorials/js-drag-and-drop-vanilla-js
+--}}
+
+
+<script>
+function onDragStart(event) {
+  event
+    .dataTransfer
+    .setData('text/plain', event.target.id);
+    event
+    .currentTarget
+    .style
+    
+}
+
+function onDrop(event) {
+  const id = event
+    .dataTransfer
+    .getData('text');
+const draggableElement = document.getElementById(id);
+const dropzone = event.target;
+dropzone.appendChild(draggableElement);
+event
+    .dataTransfer
+    .clearData();
+}
+
+function onDragOver(event) {
+  event.preventDefault();
+}
+</script>

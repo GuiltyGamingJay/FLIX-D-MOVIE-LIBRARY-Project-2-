@@ -1,4 +1,16 @@
+.dashboard{
+  color:white;
+  float:right;
 
+}
+.homepage-btn{
+  color:white;
+  
+}
+.loginout{
+  color: white;
+  float:right;
+}
 
   .primary{
     background-color:#040405;
@@ -54,7 +66,9 @@
   flex: 29%;
   padding: 5px;
 }
-
+/* ----------------------------------
+middle bar
+-------------------------------------*/
 .gaming-topic-1{
   margin-bottom: 20px;
     padding: 50px;
@@ -95,4 +109,46 @@
   display: inline-block;
   margin-left: 20px;
 }
+/* ---------------------------------------
+-------------------------------------------
+dash board
+===========================================*/
+.example-parent {
+  border: 2px solid black;
+  color: black;
+  display: flex;
+  font-family: sans-serif;
+  font-weight: bold;
+}
 
+.example-origin {
+  flex-basis: 100%;
+  flex-grow: 1;
+  padding: 10px;
+}
+
+.example-draggable {
+  background-color: #581217;
+  color:#ffffff;
+  font-weight: normal;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+.example-dropzone {
+  background-color: #292931;
+  color: #d9dcd6;
+  flex-basis: 100%;
+  flex-grow: 1;
+  padding: 10px;
+}
+.example-draggable{
+  border: 2px solid black;
+}
+/* ========================================================
+login page css
+==========================================================*/
+.div.panelBody{
+  color: #292931;
+}

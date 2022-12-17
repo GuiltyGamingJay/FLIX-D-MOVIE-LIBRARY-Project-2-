@@ -1,13 +1,11 @@
-const router = require("express").Router();
-const homeRoutes = require('./homeRoutes.js');
-const apiRoutes = require("./api");
+const router = require("express").Router()
 
-router.use('/', homeRoutes);
-router.use("/api", apiRoutes);
 
-// may need to be in homeRoutes - check with TA
-router.get("/signup", async (req, res) => {
-    res.render()
-})
+const apiRoutes = require("./api")
 
-module.exports = router;
+const homeRoutes = require("./home-routes.js")
+router.use("/api", apiRoutes)
+router.use("/", homeRoutes)
+
+
+module.exports = router
