@@ -72,4 +72,21 @@ router.get("/cart", async (req, res) => {
 
 })
 
+// STARTING HERE FOR PUT METHOD FOR BACKLOG FUNCTIONALITY
+router.put("/login/:id", withAuth, async (req, res)) => {
+  var savedGames = [];
+  if (req.session.logged_in = true) {
+    req.session.save(() => {
+
+      // divElementNameofgamefromProductSeeds_js_file is just a placeholder for now
+      await document.getElementsByClassName(example-draggable).addEventListener("onDragStart", savedGames.push(divElementNameofGamefromProductSeeds_js_file))
+    });
+    }
+  else {
+    throw(err);
+  }
+}
+// Now need to export the savedGames[] array and display it on a 'user Profile' handlebars page
+
+
 module.exports = router;
