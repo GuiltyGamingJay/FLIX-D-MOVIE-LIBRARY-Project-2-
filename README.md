@@ -1,5 +1,28 @@
-# FLIX-D-MOVIE-LIBRARY-Project-2-
-Coding bootcamp Project 2
+# Gamers' Log!
+
+Gamer’s Log is an application that helps users customize their gaming backlog, view news in the industry, view user reviews, and keep track of what games they’ve played and completed as well as what games they plan to play in the near future.
+
+# User Story
+
+As a gamer, I want a concise list of popular games with attached user reviews, so that I can make an informed choice about which games in my library I can make an active backlog of to be able to play in the future.
+
+# Technologies Used
+
+Bulma, Node.js, Handlebars, Express, Sequelize, Inquirer, DotENV, bcrypt, nodemon
+
+# Links
+
+REPO Link: https://github.com/GuiltyGamingJay/Gamers-log-project-2
+
+Heroku Link: PLACEHOLDER
+
+# Screenshots
+
+PLACEHOLDER
+
+
+
+<!-- LEAVING REQUIREMENTS FOR NOW - WILL DELETE WITH FINAL PUSH -->
 
 ## Project Requirements
 
