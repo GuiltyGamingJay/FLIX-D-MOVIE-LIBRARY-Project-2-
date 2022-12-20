@@ -1,7 +1,8 @@
 const router = require("express").Router();
 const { response } = require("express");
-const { Product, Users, Cart, Category } = require('../../models');
-const { tableName } = require("../../models/Product");
+// const { Product, Users, Cart, Category } = require('../../models');
+const { Users } = require('../../models');
+// const { tableName } = require("../../models/Product");
 
 router.post("/", async (req, res) => {  
   await Users.create(req.body);
