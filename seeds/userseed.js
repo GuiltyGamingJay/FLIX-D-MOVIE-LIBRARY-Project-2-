@@ -1,14 +1,14 @@
 const userData = [
     {
-        "name": "Andrew",
+        "username": "Andrew",
         "password": "root"
     },
     {
-        "name": "jay",
+        "username": "jay",
         "password": "root"
     },
     {
-        "name": "James",
+        "username": "James",
         "password": "root"
     }
 ]
