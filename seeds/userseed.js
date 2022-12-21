@@ -1,16 +1,14 @@
-const userData = [{
-
-
-  
-        "name": "Andrew",
+const userData = [
+    {
+        "username": "Andrew",
         "password": "root"
     },
     {
-        "name": "jay",
+        "username": "jay",
         "password": "root"
     },
     {
-        "name": "James",
+        "username": "James",
         "password": "root"
     }
 ]

@@ -1,12 +1,22 @@
 const router = require("express").Router();
 const { response } = require("express");
-const { Product, Users, Cart, Category } = require('../../models');
-const { tableName } = require("../../models/Product");
+// const { Product, Users, Cart, Category } = require('../../models');
+const { Users } = require('../../models');
+// const { tableName } = require("../../models/Product");
 
 router.post("/", async (req, res) => {  
-  await Users.create(req.body);
-  res.json({ message: "User account created" });
-  console.log(req.body);
+  try {
+    const userData = await Users.create(req.body);
+
+    req.session.save(() => {
+      req.session.user_id = userData.id;
+      req.session.logged_in = true;
+
+      res.status(200).json(userData);
+    });
+  } catch (err) {
+    res.status(400).json(err);
+  }
 });
 
 router.get("/", async (req, res) => {
@@ -73,19 +83,19 @@ router.get("/cart", async (req, res) => {
 })
 
 // STARTING HERE FOR PUT METHOD FOR BACKLOG FUNCTIONALITY
-router.put("/login/:id", withAuth, async (req, res)) => {
-  var savedGames = [];
+// NEED TO MOVE LOGIC TO SCRIPT.JS AS FRONT END CODE - FRONT END LOGIC CANNOT BE INSIDE OF A PUT
+router.put("/addGame", withAuth, async (req, res) => {
+  console.log(req.body)
   if (req.session.logged_in = true) {
-    req.session.save(() => {
+    //req.session.save(() => {
 
       // divElementNameofgamefromProductSeeds_js_file is just a placeholder for now
-      await document.getElementsByClassName(example-draggable).addEventListener("onDragStart", savedGames.push(divElementNameofGamefromProductSeeds_js_file))
-    });
-    }
+      // await document.getElementsByClassName(example-draggable).addEventListener("onDragStart", savedGames.push(divElementNameofGamefromProductSeeds_js_file))
+    }    
   else {
     throw(err);
   }
-}
+})
 // Now need to export the savedGames[] array and display it on a 'user Profile' handlebars page
 
 
